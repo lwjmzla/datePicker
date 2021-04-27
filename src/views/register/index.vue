@@ -1,7 +1,7 @@
 <template>
   <div class="register-page">
     <van-popup v-model="showPicker" round position="bottom">
-      <datePicker @cancle="cancleFn" @confirm="clickFn"></datePicker>
+      <datePicker :defaultTime="[2021, 1, 23]" @cancle="cancleFn" @confirm="clickFn"></datePicker>
     </van-popup>
     
     <!-- <van-popup v-model="showPicker" round position="bottom">
